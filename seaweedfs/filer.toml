@@ -1,0 +1,18 @@
+[postgres2]
+enabled = true
+createTable = """
+	CREATE TABLE IF NOT EXISTS "%s" (
+		dirhash   BIGINT,
+		name      VARCHAR(65535),
+		directory VARCHAR(65535),
+		meta      bytea,
+		PRIMARY KEY (dirhash, name)
+	);
+"""
+hostname = "db"
+port = 5432
+username = "user"
+password = "password"
+database = "seaweed_metadata"
+schema = ""
+sslmode = "disable"
