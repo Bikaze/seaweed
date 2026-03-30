@@ -1,4 +1,4 @@
-# Katisha Ticket Vault
+# Seaweed pdf Vault
 
 Express API for ticket upload/download URL signing using SeaweedFS S3, with ticket metadata stored in Postgres.
 
